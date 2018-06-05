@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D64A673-9E06-4047-887D-4FF1C64DA3BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>snake_program</RootNamespace>
+    <AssemblyName>snake program</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\backups\Form1 %28backup file before CoreForm%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\2Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\2Player.Designer.cs">
+      <DependentUpon>2Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\BossLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\BossLevel.Designer.cs">
+      <DependentUpon>BossLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level1\Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\Level1\Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level2\Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\Level2\Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level3\Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\Level3\Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Level4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\Level4.Designer.cs">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\LevelDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\LevelDisplay.Designer.cs">
+      <DependentUpon>LevelDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\StartScreen.Designer.cs">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\Boss\Boss.cs" />
+    <Compile Include="Map\Boss\Projectile.cs" />
+    <Compile Include="Map\Enemy\EnemyFollower.cs" />
+    <Compile Include="Map\Food\Apple.cs" />
+    <Compile Include="Map\Enemy\Enemy.cs" />
+    <Compile Include="Map\Enemy\EnemyStationary.cs" />
+    <Compile Include="Map\Food\DespawnApple.cs" />
+    <Compile Include="Map\MysteryBox.cs" />
+    <Compile Include="Map\SpawnPads\DespawnAppleSpawnPad.cs" />
+    <Compile Include="Map\SpawnPads\FoodSpawnGroup.cs" />
+    <Compile Include="Map\SpawnPads\FoodSpawnPad.cs" />
+    <Compile Include="Map\SpawnPads\AppleSpawnPad.cs" />
+    <Compile Include="Map\SpawnPads\MysteryBoxSpawnPad.cs" />
+    <Compile Include="Snake\Continouous\ContinuousSnake.cs" />
+    <Compile Include="Map\Food\Food.cs" />
+    <Compile Include="Snake\BodyPart.cs" />
+    <Compile Include="Form1Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\Coin.cs" />
+    <Compile Include="Map\Obstacle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Snake\Continouous\BodySegment.cs" />
+    <Compile Include="Snake\Continouous\ContinuousSnakeMovement.cs" />
+    <Compile Include="Snake\Snake.cs" />
+    <Compile Include="Snake\SnakeMovement.cs" />
+    <Compile Include="Snake\TurnPoint.cs" />
+    <Compile Include="Util\CoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\GameEngine.cs" />
+    <Compile Include="Util\GameObject.cs" />
+    <Compile Include="Util\MysteryBoxEngine.cs" />
+    <Compile Include="Util\Vector.cs" />
+    <EmbeddedResource Include="..\..\backups\Form1 %28backup file before CoreForm%29.resx">
+      <DependentUpon>Form1 %28backup file before CoreForm%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\2Player.resx">
+      <DependentUpon>2Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\BossLevel.resx">
+      <DependentUpon>BossLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level1\Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level2\Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level3\Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Level4.resx">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\LevelDisplay.resx">
+      <DependentUpon>LevelDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\CoreForm.resx">
+      <DependentUpon>CoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-box-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you_win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you_lose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy_guardian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy_guardianAttack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake_head1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange_black_brick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paused.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paused.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level_Boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake_headRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_Won.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Won.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Single_Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two_player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nibblers.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
